@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mechanical Wave Simulation</title>
-    <!-- Link to the external CSS styling stylesheet -->
+   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +15,11 @@
     </header>
 
     <div class="simulation-box">
-        <!-- Visualizer canvas -->
+        
         <div>
             <canvas id="waveCanvas" width="650" height="350"></canvas>
             
-            <!-- Output Display -->
+            
             <div class="stats">
                 <h3>Calculated Wave Parameters (SI Units Output)</h3>
                 <p>Wave Speed (v): <span id="outSpeed">0.00</span> m/s</p>
@@ -29,9 +29,9 @@
             </div>
         </div>
 
-        <!-- Inputs / Controls -->
+       
         <div class="controls">
-            <!-- Wave Type (Default set to pulse) -->
+            
             <div class="control-group">
                 <label for="waveType">Wave Mode</label>
                 <select id="waveType">
@@ -40,7 +40,7 @@
                 </select>
             </div>
 
-            <!-- Dynamic Unit Input: Amplitude -->
+            
             <div class="control-group">
                 <label for="ampUnit">Amplitude Unit</label>
                 <select id="ampUnit">
@@ -51,24 +51,24 @@
                 <input type="number" id="ampInput" value="40" min="1" max="100">
             </div>
 
-            <!-- Frequency Slider -->
+            
             <div class="control-group">
                 <label for="freqSlider">Frequency: <span id="freqVal" class="value-display">1.50</span> Hz</label>
                 <input type="range" id="freqSlider" min="0.5" max="3.0" step="0.1" value="1.5">
             </div>
 
-            <!-- Tension Slider -->
+            
             <div class="control-group">
                 <label for="tensionSlider">Tension: <span id="tensionVal" class="value-display">Medium</span></label>
                 <input type="range" id="tensionSlider" min="10" max="50" step="20" value="30">
             </div>
 
-            <!-- Pulse Button -->
+           
             <div class="control-group" id="pulseBtnContainer" style="display: block; margin-bottom: 25px;">
                 <button class="btn-pulse" id="pulseBtn">Trigger Pulse</button>
             </div>
 
-            <!-- Maps back home to landing.html -->
+           
             <div class="control-group" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-bottom: 0;">
                 <a href="index.html" class="btn-portal">
                     <span>⌂</span> Return Home
@@ -78,7 +78,7 @@
     </div>
 </div>
 
-<!-- Link to the external JavaScript logic script -->
+
 <script src="script.js"></script>
 </body>
 </html>

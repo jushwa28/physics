@@ -1,12 +1,12 @@
 const canvas = document.getElementById('waveCanvas');
 const ctx = canvas.getContext('2d');
 
-// State Variables
+
 let time = 0;
 let pulseActive = false;
 let pulseTime = 0;
 
-// Floating context backgrounds
+
 const particles = [];
 for (let i = 0; i < 40; i++) {
     particles.push({
@@ -18,7 +18,7 @@ for (let i = 0; i < 40; i++) {
     });
 }
 
-// Element Bindings
+
 const waveTypeSelect = document.getElementById('waveType');
 const ampUnitSelect = document.getElementById('ampUnit');
 const ampInput = document.getElementById('ampInput');
@@ -27,7 +27,7 @@ const tensionSlider = document.getElementById('tensionSlider');
 const pulseBtnContainer = document.getElementById('pulseBtnContainer');
 const pulseBtn = document.getElementById('pulseBtn');
 
-// Value Displays
+
 const freqVal = document.getElementById('freqVal');
 const tensionVal = document.getElementById('tensionVal');
 const outSpeed = document.getElementById('outSpeed');
